@@ -62,4 +62,4 @@ Para criar conteudo precisa-se:
 
 # Resultado final
 
-[final](/public/final.png)
+![NewsShared](/public/final.png)
