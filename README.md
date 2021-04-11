@@ -8,7 +8,7 @@ Para criar conteudo precisa-se:
 
 ```js
 {
-	/* insira aqui a url de onde a informacao do post veio */
+	/* insira aqui a url de onde a informacao do post veio (deixar como esta) */
 }
 <meta property="og:url" content="https://www.facebook.com/login"></meta>;
 
