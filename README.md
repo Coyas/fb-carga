@@ -60,6 +60,24 @@ Para criar conteudo precisa-se:
 
 > ./ngrok http 3000
 
+- exemplo do statos de ngrok
+
+```js
+Region                        United States (us)
+Web Interface                 http://127.0.0.1:4040
+Forwarding                    http://1e0d5e13f626.ngrok.io -> http://localhost:3000
+Forwarding                    https://1e0d5e13f626.ngrok.io -> http://localhost:3000
+
+Connections                   ttl     opn     rt1     rt5     p50     p90
+                             162     1       0.00    0.02    7.52    37.19
+
+HTTP Requests
+-------------
+
+GET /_next/webpack-hmr         200 OK
+GET /_next/webpack-hmr         200 OK
+```
+
 # Resultado final
 
 ![NewsShared](/public/final.png)
