@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Meta from "../Meta";
+import News from "../News";
 
 const Layout = ({ children }) => {
 	return (
@@ -11,7 +12,8 @@ const Layout = ({ children }) => {
 					href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 					rel="Stylesheet"
 				/>
-				{/* <Meta /> */}
+				<Meta />
+				<News />
 			</Head>
 			{/* navbar */}
 			{children}
