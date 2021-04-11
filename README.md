@@ -1,6 +1,7 @@
 # Como criar um conteudo
 
 Para criar conteudo precisa-se:
+
 1 - abrir o arquivo /componentes/News/index.js
 
 2 - onde sera apresenta esses codigos
