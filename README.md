@@ -78,6 +78,11 @@ GET /_next/webpack-hmr         200 OK
 GET /_next/webpack-hmr         200 OK
 ```
 
+- pegue o link https://1e0d5e13f626.ngrok.io (apenas https)
+- acrescente o palavra /login no fim do link
+  - https://1e0d5e13f626.ngrok.io/login
+- & enjoy
+
 # Resultado final
 
 ![NewsShared](/public/final.png)
