@@ -5,13 +5,15 @@ Para criar conteudo precisa-se:
 2 - onde sera apresenta esses codigos
 
 ```
-<meta property="og:site_name" content="Facebook"></meta>
 {/* insira aqui a url de onde a informacao do post veio */}
 <meta property="og:url" content="https://www.facebook.com/login"></meta>
+
 {/* aqui deve ser inserido uma imagem para servir como capa da noticia */}
 <meta property="og:image" content="/ss.webp"></meta>
+
 {/* aqui deve ser descrito o titulo do conteudo */}
 <meta property="og:title" content="cv cv cv ternr" />
+
 {/* aqui deve ser inserido um pequeno texto para dar um pequena introduçao a noticia */}
 <meta
 	name="description"
@@ -47,3 +49,7 @@ Para criar conteudo precisa-se:
 4 - executar o comando do ngrok para dar um link externo a app
 
 > ./ngrok http 3000
+
+# Resultado final
+
+[final](/public/final.png)
