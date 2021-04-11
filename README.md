@@ -2,6 +2,7 @@
 
 Para criar conteudo precisa-se:
 1 - abrir o arquivo /componentes/News/index.js
+
 2 - onde sera apresenta esses codigos
 
 ```
@@ -21,7 +22,7 @@ Para criar conteudo precisa-se:
 ></meta>
 ```
 
-3 - editar apenas as ultimas 3 <meta> tags
+3 - editar apenas as ultimas 3 "<meta>" tags
 
 - <meta property="og:image" content="/ss.webp"></meta> escreva em contento caminho para da noticia, introduza a capa na pasta public
 - <meta property="og:title" content="cv cv cv ternr" /> escreva em content o titulo da noticia
