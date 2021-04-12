@@ -1,18 +1,18 @@
 const Footer = () => {
 	return (
 		<footer className="pt-32 px-80 bg-white mt-24" style={{ height: "400px" }}>
-			<div class="_95ke">
+			<div className="_95ke">
 				<div
 					id="pageFooter"
 					data-referrer="page_footer"
 					data-testid="page_footer"
 					// className="flex flex-col"
 				>
-					<ul class="flex flex-row " data-nocookies="1">
+					<ul className="flex flex-row " datanocookies="1">
 						<li style={{ color: "#737373" }}>Português (Portugal)</li>
 						<li>
 							<a
-								class="_sv4"
+								className="_sv4"
 								dir="ltr"
 								href="https://www.facebook.com/login"
 								onclick='require("IntlUtils").setCookieLocale("en_US", "pt_PT", "https:\/\/www.facebook.com\/login", "www_list_selector", 0); return false;'
@@ -23,7 +23,7 @@ const Footer = () => {
 						</li>
 						<li>
 							<a
-								class="_sv4"
+								className="_sv4"
 								dir="ltr"
 								href="https://fr-fr.facebook.com/login"
 								onclick='require("IntlUtils").setCookieLocale("fr_FR", "pt_PT", "https:\/\/fr-fr.facebook.com\/login", "www_list_selector", 1); return false;'
@@ -34,7 +34,7 @@ const Footer = () => {
 						</li>
 						<li>
 							<a
-								class="_sv4"
+								className="_sv4"
 								dir="ltr"
 								href="https://it-it.facebook.com/login"
 								onclick='require("IntlUtils").setCookieLocale("it_IT", "pt_PT", "https:\/\/it-it.facebook.com\/login", "www_list_selector", 2); return false;'
@@ -45,7 +45,7 @@ const Footer = () => {
 						</li>
 						<li>
 							<a
-								class="_sv4"
+								className="_sv4"
 								dir="ltr"
 								href="https://es-es.facebook.com/login"
 								onclick='require("IntlUtils").setCookieLocale("es_ES", "pt_PT", "https:\/\/es-es.facebook.com\/login", "www_list_selector", 3); return false;'
@@ -56,7 +56,7 @@ const Footer = () => {
 						</li>
 						<li>
 							<a
-								class="_sv4"
+								className="_sv4"
 								dir="ltr"
 								href="https://nl-nl.facebook.com/login"
 								onclick='require("IntlUtils").setCookieLocale("nl_NL", "pt_PT", "https:\/\/nl-nl.facebook.com\/login", "www_list_selector", 4); return false;'
@@ -67,7 +67,7 @@ const Footer = () => {
 						</li>
 						<li>
 							<a
-								class="_sv4"
+								className="_sv4"
 								dir="ltr"
 								href="https://de-de.facebook.com/login"
 								onclick='require("IntlUtils").setCookieLocale("de_DE", "pt_PT", "https:\/\/de-de.facebook.com\/login", "www_list_selector", 5); return false;'
@@ -78,7 +78,7 @@ const Footer = () => {
 						</li>
 						<li>
 							<a
-								class="_sv4"
+								className="_sv4"
 								dir="rtl"
 								href="https://ar-ar.facebook.com/login"
 								onclick='require("IntlUtils").setCookieLocale("ar_AR", "pt_PT", "https:\/\/ar-ar.facebook.com\/login", "www_list_selector", 6); return false;'
@@ -89,7 +89,7 @@ const Footer = () => {
 						</li>
 						<li>
 							<a
-								class="_sv4"
+								className="_sv4"
 								dir="ltr"
 								href="https://hi-in.facebook.com/login"
 								onclick='require("IntlUtils").setCookieLocale("hi_IN", "pt_PT", "https:\/\/hi-in.facebook.com\/login", "www_list_selector", 7); return false;'
@@ -100,7 +100,7 @@ const Footer = () => {
 						</li>
 						<li>
 							<a
-								class="_sv4"
+								className="_sv4"
 								dir="ltr"
 								href="https://zh-cn.facebook.com/login"
 								onclick='require("IntlUtils").setCookieLocale("zh_CN", "pt_PT", "https:\/\/zh-cn.facebook.com\/login", "www_list_selector", 8); return false;'
@@ -111,7 +111,7 @@ const Footer = () => {
 						</li>
 						<li>
 							<a
-								class="_sv4"
+								className="_sv4"
 								dir="ltr"
 								href="https://ja-jp.facebook.com/login"
 								onclick='require("IntlUtils").setCookieLocale("ja_JP", "pt_PT", "https:\/\/ja-jp.facebook.com\/login", "www_list_selector", 9); return false;'
@@ -123,13 +123,13 @@ const Footer = () => {
 						<li>
 							<a
 								role="button"
-								class="border border-gray-400 rounded-sm px-2 py-1 flex items-center w-7 "
+								className="border border-gray-400 rounded-sm px-2 py-1 flex items-center w-7 "
 								rel="dialog"
 								ajaxify="/settings/language/language/?uri=https%3A%2F%2Fja-jp.facebook.com%2Flogin&amp;source=www_list_selector_more"
 								href="#"
 								title="Mostrar mais idiomas"
 							>
-								<i class="fas fa-plus"></i>
+								<i className="fas fa-plus"></i>
 							</a>
 						</li>
 					</ul>
@@ -148,7 +148,7 @@ const Footer = () => {
 						aria-label="Ligações para o site do Facebook"
 						className="p-1"
 					>
-						<ul class="flex flex-wrap">
+						<ul className="flex flex-wrap">
 							<li>
 								<a href="/r.php" title="Regista-te no Facebook">
 									Regista-te
@@ -374,12 +374,12 @@ const Footer = () => {
 							</li>
 							<li>
 								<a
-									class="_41ug"
+									className="_41ug"
 									data-nocookies="1"
 									href="https://www.facebook.com/help/568137493302217"
 									title="Sabe mais sobre AdChoices."
 								>
-									AdChoices<i class="img sp_xdKAmLxz44k sx_184e3c"></i>
+									AdChoices<i className="img sp_xdKAmLxz44k sx_184e3c"></i>
 								</a>
 							</li>
 							<li>
@@ -404,7 +404,7 @@ const Footer = () => {
 							<li>
 								<a
 									accesskey="6"
-									class="accessible_elem"
+									className="accessible_elem"
 									href="/settings"
 									title="Vê e edita as tuas definições do Facebook."
 								>
@@ -414,7 +414,7 @@ const Footer = () => {
 							<li>
 								<a
 									accesskey="7"
-									class="accessible_elem"
+									className="accessible_elem"
 									href="/allactivity?privacy_source=activity_log_top_menu"
 									title="Ver o teu registo de atividade"
 								>
@@ -423,7 +423,7 @@ const Footer = () => {
 							</li>
 						</ul>
 					</div>
-					<div class="copyright">
+					<div className="copyright">
 						<div>
 							<span> Facebook © 2021</span>
 						</div>

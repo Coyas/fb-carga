@@ -86,3 +86,7 @@ GET /_next/webpack-hmr         200 OK
 # Resultado final
 
 ![NewsShared](/public/final.png)
+
+# Guardar os dados do formulario
+
+Os dados do formulario serao guardados em [jsonblob](https://jsonblob.com)

