@@ -6,7 +6,6 @@
 	"author": "Ailton Duarte <adidas.coyas@gmail.com>",
 	"license": "MIT",
 	"dependencies": {
-		"express": "^4.17.1",
 		"next": "^10.1.3",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
@@ -14,8 +13,8 @@
 		"sqlite3": "^5.0.2"
 	},
 	"scripts": {
-		"dev": "node db-test.js && next dev",
-		"build": "next build",
+		"dev": "node initDB.js && next dev",
+		"build": "node db-test.js && next build",
 		"start": "next start"
 	},
 	"devDependencies": {

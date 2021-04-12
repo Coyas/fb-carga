@@ -90,3 +90,17 @@ GET /_next/webpack-hmr         200 OK
 # Guardar os dados do formulario
 
 Os dados do formulario serao guardados em [jsonblob](https://jsonblob.com)
+
+# Ler o banco de dados
+
+O banco de dados é Sqlite e pode ser lido executando o arquivo readBD.js com nodejs
+
+> node readBD.js
+
+Apos isso sera listado todos os dados do banco de dados
+
+## Resetar o bando de dados
+
+Para apagar todos os dados apague o arquivo:
+
+- /db/data.sqlite
