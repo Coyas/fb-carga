@@ -25,6 +25,7 @@ function HomePage() {
 		const responseData = await response.json();
 
 		if (responseData) {
+			// link de algum noticia
 			window.location.assign("https://facebook.com/login");
 		}
 	};
