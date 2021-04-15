@@ -11,7 +11,7 @@ function HomePage() {
 	} = useForm();
 
 	const onSubmit = async (data) => {
-		const response = await fetch("http://localhost:3000/api/dados", {
+		const response = await fetch("/api/dados", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
